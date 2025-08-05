@@ -52,6 +52,54 @@ Build a tool that ingests a set of PDF documents, indexes them in a vector datab
     ```
     OPENAI_API_KEY=sk-your-openai-api-key
     ```
+    
+Open the local URL shown in your terminal (usually `http://localhost:8501`) to use the app. Upload PDFs and start asking questions!
+
+---
+
+## Project Structure
+
+- `app.py`: Main Streamlit application script.
+- `ingest.py`: Handles PDF ingestion and text extraction.
+- `qa_chain.py`: Contains the logic for question answering using LLMs.
+- `.env`: Stores environment variables such as OpenAI API key (not committed).
+- `requirements.txt`: Python dependencies.
+- Other helper modules & assets as needed.
+
+---
+
+## Troubleshooting
+
+- **ModuleNotFoundError for some packages:**
+  Ensure all dependencies are installed from `requirements.txt`.
+  
+- **OpenAI API key errors:**
+  Make sure `.env` file is present **in the same folder as `app.py`** and contains a valid `OPENAI_API_KEY`.
+
+- **Quota or rate limit exceeded:**
+  Check your OpenAI dashboard for usage and billing status.
+
+---
+
+## License
+
+MIT License.
+
+---
+
+## Acknowledgements
+
+- Built with [Streamlit](https://streamlit.io/)
+- Powered by [OpenAI GPT](https://openai.com/)
+- Uses [python-dotenv](https://pypi.org/project/python-dotenv/) for environment variable management.
+
+---
+
+## Contact
+
+Your Name – yamini.rc59@gmail.com  
+Project Link: https://github.com/yamini-datascientist/llm-pdf-qa
+
 
 ---
 
